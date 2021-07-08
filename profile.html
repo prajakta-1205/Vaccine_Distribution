@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Disrtibution</title>
+    <script type="text/javascrip" src="C:\Users\Dell\PycharmProjects\python_loginpage\templates\function.js"></script>
+    <style>
+
+        p {text-align: center;}
+        p {font-size: 30px;}
+        p {color: #3b77bb;}
+
+
+
+        .button{
+            border: none;
+            color :rgba(10, 10, 10, 0.726);
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 4px 2px ;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+            position:relative;
+            left:550px;
+            font-style: normal;
+
+        }
+
+
+
+        .button1{
+            position:relative;
+            top: 100px;
+            left:650px;
+            background-color: azure;
+            border-color:#3b77bb ;
+            border-style: double;
+
+        }
+        .button1:hover {
+            background-color: #3b77bb;
+            color: white;
+        }
+        .button2{
+            position:relative;
+            top:200px;
+            left:420px;
+            background-color: azure;
+            border-color:#3b77bb ;
+            border-style: double;
+
+        }
+        .button2:hover {
+            background-color: #3b77bb;
+            color: white;
+        }
+        body{
+            background-image: url("https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/covid19_myths_you_shouldnt_believe_slideshow/1800x1200_covid19_myths_you_shouldnt_believe_slideshow.jpg?resize=*:350px");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position : relative;
+        }
+        .arse{
+            font-size: x-small;
+        }
+        form{
+        position:relative;
+        left:600px;
+        width:300px;
+        border:5px solid ;
+        padding:10px;
+        width:350px
+        }
+       .sub{
+        position:relative;
+            font-size:15px;
+            left:10px;
+
+       background-color: azure;
+            border-color:#3b77bb ;
+            border-style: double;
+            border-radius:12px;
+       }
+       .sub:hover{
+    background-color: #3b77bb;
+            color: white;
+}
+     </style>
+    </head>
+    <body>
+
+          <header>
+          <p style="font-style:oblique">" Dawai bhi, kadai bhi"</p>
+          <p > (Yes to Vaccine , Yes to Caution)</p>
+
+          <div class="arse">
+          <p>for corona updates
+          <a href="https://www.aarogyasetu.gov.in/">https://www.aarogyasetu.gov.in</a></p>
+          </div>
+        </header>
+          <div class="txt">
+          <form name="search" action="{{ url_for('demo')}}" method="post">
+                <label for="firstname">Vaccines:</label>
+                <input type="text" id="firstname" name="fname" placeholder="Enter No of Vaccines ">
+<!--        <input id="searchbox" name="searchbox" placeholder="no of vaccines">-->
+              <button type="submit" class="sub" >Submit</button>
+          </form>
+              </div>
+<!--          <form  name ="search" action="C:\Users\Dell\PycharmProjects\algoritm\main_program.py" method="get">-->
+<!--               <input  id="text1" name="searchbox" placeholder="no of vacines" type="number">-->
+<!--              <input type="submit" value="Submit">-->
+<!--&lt;!&ndash;              <button onclick="fn1()" id="btn1">Submit</button>&ndash;&gt;-->
+<!--          </form>-->
+          <button onclick="window.location.href='http://localhost/Mini_project_2021/state.php';"  class="button button1" >State wise Distribution</button>
+          <button onclick="window.location.href='http://localhost/Mini_project_2021/fetch.php';" class="button button2">District wise Distribution</button>
+    </body>
+</html>
+<script>
+    function fn1() {
+    var input = document.getElementById("text1").value;
+    alert(input);
+}
+</script>
